@@ -292,7 +292,7 @@ class CustomerPaymentProfileMaskedType extends CustomerPaymentProfileBaseType im
 
     // Json Serialize Code
     #[\ReturnTypeWillChange]
-    public function jsonSerialize(): mixed
+    public function jsonSerialize()
     {
         $values = array_filter((array)get_object_vars($this),
         function ($val){

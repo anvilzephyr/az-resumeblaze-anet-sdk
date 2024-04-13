@@ -119,7 +119,7 @@ class GetCustomerPaymentProfileRequest extends ANetApiRequestType
 
     // Json Serialize Code
     #[\ReturnTypeWillChange]
-    public function jsonSerialize(): mixed
+    public function jsonSerialize()
     {
         $values = array_filter((array)get_object_vars($this),
         function ($val){
